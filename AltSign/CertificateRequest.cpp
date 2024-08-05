@@ -89,6 +89,7 @@ CertificateRequest::CertificateRequest()
     
     // Subject
     X509_NAME *subject = X509_REQ_get_subject_name(request);
+    //appear break， disable X509_NAME_add_entry_by_txt 
     X509_NAME_add_entry_by_txt(subject, "C", MBSTRING_ASC, (const unsigned char *)country, -1, -1, 0);
     X509_NAME_add_entry_by_txt(subject, "ST", MBSTRING_ASC, (const unsigned char*)state, -1, -1, 0);
     X509_NAME_add_entry_by_txt(subject, "L", MBSTRING_ASC, (const unsigned char*)city, -1, -1, 0);
