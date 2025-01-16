@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <LLVMInstallDir>D:\A-D2\workspace\IOS\ipa-sign\AltServer-Windows-env-build\LLVM\LLVM64\</LLVMInstallDir>
+    <LLVMToolsVersion>17.0.6</LLVMToolsVersion>
+  </PropertyGroup>
+</Project>
