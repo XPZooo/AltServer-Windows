@@ -1,5 +1,6 @@
 #include "WiredConnection.h"
 #include "ServerError.hpp"
+#include <codecvt>
 
 WiredConnection::WiredConnection(std::shared_ptr<Device> device, idevice_connection_t connection) : _device(device), _connection(connection)
 {

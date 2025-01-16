@@ -2,6 +2,7 @@
 
 #include <WinSock2.h>
 #include <cpprest/json.h>
+#include <codecvt>
 
 #define odslog(msg) { std::stringstream ss; ss << msg << std::endl; OutputDebugStringA(ss.str().c_str()); }
 

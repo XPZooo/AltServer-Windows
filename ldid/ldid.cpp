@@ -57,6 +57,9 @@
 //#include <unistd.h>
 #include <io.h>
 
+#include <share.h>
+#include <codecvt>
+
 #include "mman.h"
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -2457,7 +2460,8 @@ namespace ldid {
 		Mode mode_;
 		std::string code_;
 
-		mutable std::auto_ptr<Expression> regex_;
+		//std::unique_ptr<Expression> regex_;
+		mutable std::unique_ptr<Expression> regex_;
 
 		Rule(unsigned weight, Mode mode, const std::string& code) :
 			weight_(weight),
